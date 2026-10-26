@@ -119,3 +119,7 @@ total_time(){
     echo -e "$(timestamp) [INFO] Script completed in $SECONDS seconds" | tee -a $logs_file
     echo -e "$(timestamp) [INFO] ==== Script completed Execution =====" | tee -a $logs_file    
 }
+
+mysql_client(){
+    dnf install mysql -y
+}
